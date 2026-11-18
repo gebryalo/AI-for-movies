@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotFlix - Encontre o filme perfeito</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+    <div class="main-content">
+        <header class="brand-header">
+            <div class="container-logo">
+                <img src="BOTFLIX2.png" alt="imagem-avatar-robo" class="robot-image">
+
+            </div>
+            <p class="brand-subtitle">Seu assistente pessoal perfeito para encontrar filmes no seu humor. </p>
+            <p class="brand-subtitlee">Digite como você está se sentindo hoje e tenha o filme ideal abaixo!</p>
+        </header>
+        <section class="search-card">
+            <div class="search-content">
+                <div class="input-container">
+                    <label for="mood-textarea">
+                        <input id="mood-textarea" type="text"
+                               placeholder="Estou me sentindo cansado e quero um filme para relaxar..."
+                               class="mood-textarea">
+                    </label>
+                </div>
+                <div class="examples">
+                    <h2 class="examples-title">Exemplos:</h2>
+                    <ul class="examples.list">
+                        <li>Estou me sentindo apaixonado e quero algo romântico</li>
+                        <li>Quero assistir um filme de luta</li>
+                        <li>Estou me sentindo cansado e quero algo para relaxar</li>
+                    </ul>
+                </div>
+                <button id="search-button" class="search-button">
+                    <span class="play-icon">&#9654</span>
+                    Encontrar
+                </button>
+            </div>
+        </section>
+        <div id="results" class="results">
+
+            <div id="movies-grid" class="movies-grid"></div>
+        </div>
+    </div>
+</main>
+<script src="index.js"></script>
+</body>
+
+</html>
