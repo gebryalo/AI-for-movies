@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/botflix
+    username: botflix
+    password: botflix
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          options:
+            model: gemini-2.5-flash
+            temperature: 0.4
+
+tmdb:
+  base-url: https://api.themoviedb.org/3
+  token: ${TMDB_TOKEN}
+
+botflix:
+  cors-origins: "*"
+  quantidade-filmes: 5

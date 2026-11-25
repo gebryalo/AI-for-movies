@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: botflix
+      POSTGRES_USER: botflix
+      POSTGRES_PASSWORD: botflix
+    ports:
+      - "5432:5432"
+    volumes:
+      - botflix-data:/var/lib/postgresql/data
+volumes:
+  botflix-data:
